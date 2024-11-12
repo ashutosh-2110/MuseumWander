@@ -1,0 +1,476 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    padding: 0 5px; /* Add some padding */
+    background-color: #323638; /* Background color for the header */
+}
+
+.logo img {
+    height: 43px; /* Set the height of the logo */
+    margin-right: 5px; /* Space between logo and nav */
+    opacity: 2.0;
+}
+
+.subnavbar {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #323638;
+}
+
+.navitem {
+    position: relative;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    left: 350px;
+    padding-top: 10px;
+    display: flex;
+}
+
+ul.navitem li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.navitem li a {
+    display: inline;
+    text-decoration: none;
+    color: #e3e0e0ea;
+    font-size: 16px;
+    padding: 13px;
+    padding-left: 35px;
+}
+
+.navitem li a:hover {
+    color: white;
+}
+
+
+.hero {
+    color: white;
+    text-align: center;
+    padding: 200px 50px;
+    background-image: url(img/home.webp);
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    display: inline-block;
+    margin-top: 20px;
+}
+.featured img{
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    padding: 0;
+    margin: 0 auto;
+    position: relative;
+    top: 80px; right: 370px;
+}
+
+.featured {
+    padding: 30px 20px;
+    text-align: center;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.featured h2 {
+    font-size: 2rem;
+    color: #333;
+    position: relative;
+    bottom: 283px; right: 20px;
+}
+
+.featured p{
+    font-size: 1.28rem;
+    color: #344534;
+    margin: 5px 0;
+    padding: 0 10px;
+    position: relative;
+    bottom: 230px; left: 280px;
+    text-align: center;
+    font-family: poppins;
+    font-weight: 300;
+}
+
+#ticket-section {
+    padding: 50px 20px;
+    background-color: #e0fbfc;
+    text-align: center;
+}
+
+#ticket-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.checkout{
+     font-weight: 800;
+     font-style: inherit;
+     position: relative;
+     top: 0;
+     overflow: hidden;
+     background: url(img/chechout.webp) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+}
+.checkout h2{
+    position: relative;
+    left: 530px; top: 50px;
+    font-size: 40px;
+}
+
+.form{
+    position: relative;
+     top: 75px; left: 20px;
+}
+ #name{
+    background-color: #333;
+    color: #f4f4f4;
+ }
+ #email{
+    background-color: #333;
+    color: #f4f4f4;
+ }
+ #card{
+    background-color: #333;
+    color: #f4f4f4;
+ }
+ .confirmation{
+    background: url(img/DALL·E\ 2024-11-12\ 21.29.52\ -\ A\ colorful\ background\ image\ for\ a\ payment\ confirmation\ page\,\ featuring\ a\ modern\ abstract\ design\ with\ soft\ gradients\ in\ shades\ of\ blue\,\ green\,\ and\ yell.webp);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+ }
+ 
+
+
+/* Chatbot Styles */
+.chatbot-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    display: none;
+    flex-direction: column;
+    z-index: 1000;
+}
+
+.chatbot-header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px 10px 0 0;
+}
+
+.chatbot-header h4 {
+    margin: 0;
+}
+
+#chatbot-close {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.chatbot-body {
+    padding: 10px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#chatbot-messages {
+    overflow-y: auto;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+#chatbot-input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#chatbot-send {
+    padding: 10px;
+    background-color: #005f73;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.chatbot-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #00abf0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.chatbot-icon img {
+    width: 35px;
+    height: 35px;
+}
+
+.chatbot-msg {
+    padding: 10px;
+    background-color: #e0fbfc;
+    border-radius: 10px;
+    margin: 5px 0;
+}
+/* Chatbot Styles */
+.chatbot-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    display: none;
+    flex-direction: column;
+    z-index: 1000;
+}
+
+.chatbot-header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px 10px 0 0;
+}
+
+.chatbot-header h4 {
+    margin: 0;
+}
+
+#chatbot-close {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.chatbot-body {
+    padding: 10px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#chatbot-messages {
+    overflow-y: auto;
+    height: 200px;
+    margin-bottom: 10px;
+    padding-right: 5px;
+}
+
+#chatbot-input {
+    width: 97%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#chatbot-send {
+    padding: 8px;
+    background-color: #005f73;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.chatbot-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #00abf0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.chatbot-icon img {
+    width: 35px;
+    height: 35px;
+}
+
+.chatbot-msg {
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px 0;
+    max-width: 70%;
+    word-wrap: break-word;
+}
+
+/* Style for the chatbot's (bot) messages (align left) */
+.chatbot-msg.bot {
+    background-color: #e0fbfc;
+    align-self: flex-start;
+}
+
+/* Style for the user's messages (align right) */
+.chatbot-msg.user {
+    background-color: #94d2bd;
+    align-self: flex-end;
+    color: #fff;
+}
+/* Suggestion button styles */
+#chatbot-suggestions {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.suggestion-btn {
+    padding: 8px 15px;
+    margin: 5px;
+    background-color: #005f73;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.suggestion-btn:hover {
+    background-color: #0a9396;
+}
+
+footer {
+    background-color: #333;
+    color: #f9f9f9;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.footer-container div {
+    margin: 10px;
+}
+
+.footer-container h3 {
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+.footer-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-container ul li {
+    margin: 5px 0;
+}
+
+.footer-container ul li a {
+    color: #f9f9f9;
+    text-decoration: none;
+}
+
+.footer-container ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-social a img {
+    width: 24px;
+    height: 24px;
+    margin: 0 5px;
+    transition: opacity 0.3s;
+}
+
+.footer-social a img:hover {
+    opacity: 0.7;
+}
+
+.footer-bottom {
+    border-top: 1px solid #555;
+    padding: 10px 0;
+    font-size: 12px;
+    color: #aaa;
+}
+
