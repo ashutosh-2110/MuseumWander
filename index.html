@@ -3,168 +3,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Museum Ticketing System with Chatbot</title>
+    <title>MuseumWander - Discover Art & Culture</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <!-- Navigation -->
     <header>
         <div class="logo">
-            <img src="img/logo1-removebg-preview.png" alt="logo">
+            <a href="#home"><img src="img/logo1-removebg-preview.png" alt="MuseumWander Logo"></a>
         </div>
         <nav class="subnavbar">
             <ul class='navitem'>
-                <li><a href='#home'>Home</a></li>
-                <li><a href='#about'>About</a></li>
-                <li><a href='#ticket-section'>Buy Tickets</a></li>
-                <li><a href='#Movies'>Contact Us</a></li>
+                <li><a href='#home'><i class="fas fa-home"></i> Home</a></li>
+                <li><a href='#about'><i class="fas fa-info-circle"></i> About</a></li>
+                <li><a href='#ticket-section'><i class="fas fa-ticket-alt"></i> Buy Tickets</a></li>
+                <li><a href='#contact'><i class="fas fa-envelope"></i> Contact Us</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Hero Section -->
     <section class="hero" id="home">
-        <h1>Welcome to the MuseumWander</h1>
-        <p>Explore our latest exhibitions and buy your tickets online.</p>
-        <a href="#ticket-section" class="btn">Buy Tickets Now</a>
+        <h1>Discover the World of Art & Culture</h1>
+        <p>Experience the magic of museums with our seamless ticketing platform. Book your journey through history today.</p>
+        <a href="#ticket-section" class="btn">Explore Museums <i class="fas fa-arrow-right"></i></a>
     </section>
 
     <!-- Featured Exhibit Section -->
     <section class="featured" id="about">
-        <img src="img/about.webp" alt="about">
-        <h2>About Us</h2>
-        <p>Welcome to MuseumWander,We aim  to bridge the gap between </p>
-            <p>museums and visitors by making culture and history accessible to all.</p>
-            <p>Our platform not only supports convenient ticket purchasing but</p> 
-            <p> also serves as a resource for learning more about the unique</p>
-              <p> stories behind each museum and its treasures. Our platform</p> 
-            <p>  is dedicated to making  museum visits easie  which is more</p> 
-            <p>  enriching for everyone. We offer a seamless online ticketing service,</p>
-           <p>   allows you to book tickets in advance, avoid long queues, </p>
-            <p>   enjoy your museum experience stress-free.</p>
+        <img src="img/about.webp" alt="Museum Exhibition" loading="lazy">
+        <div class="featured-content">
+            <h2>Your Gateway to Cultural Exploration</h2>
+            <p>Welcome to MuseumWander, where we bridge the gap between museums and visitors by making culture and history accessible to all.</p>
+            <p>Our platform not only supports convenient ticket purchasing but also serves as a resource for learning more about the unique stories behind each museum and its treasures.</p>
+            <p>We are dedicated to making museum visits easier and more enriching for everyone. Our seamless online ticketing service allows you to:</p>
+            <ul>
+                <li><i class="fas fa-check-circle"></i> Book tickets in advance</li>
+                <li><i class="fas fa-check-circle"></i> Skip long queues</li>
+                <li><i class="fas fa-check-circle"></i> Enjoy stress-free museum experiences</li>
+            </ul>
+        </div>
     </section>
 
     <!-- Ticket Booking Section -->
     <section id="ticket-section">
-        <h2>Book Your Tickets</h2>
+        <h2>Book Your Museum Adventure</h2>
         <form>
-            <label for="date">Select Date:</label>
-            <input type="date" id="date" name="date" required>
+            <div class="form-group">
+                <label for="date"><i class="far fa-calendar-alt"></i> Select Date:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
             
-            <label for="exhibit">Select Exhibit:</label>
-            <select id="exhibit" name="exhibit">
-                <option value="">Select a state</option>
+            <div class="form-group">
+                <label for="exhibit"><i class="fas fa-map-marker-alt"></i> Select Museum Location:</label>
+                <select id="exhibit" name="exhibit" required>
+                    <option value="">Choose a state</option>
+                    <option value="andhra">Andhra Pradesh</option>
+                    <option value="arunachal">Arunachal Pradesh</option>
+                    <option value="assam">Assam</option>
+                    <option value="bihar">Bihar</option>
+                    <option value="chhattisgarh">Chhattisgarh</option>
+                    <option value="goa">Goa</option>
+                    <option value="gujarat">Gujarat</option>
+                    <option value="haryana">Haryana</option>
+                    <option value="himachal">Himachal Pradesh</option>
+                    <option value="jharkhand">Jharkhand</option>
+                    <option value="karnataka">Karnataka</option>
+                    <option value="kerala">Kerala</option>
+                    <option value="maharashtra">Maharashtra</option>
+                    <option value="madhya">Madhya Pradesh</option>
+                    <option value="manipur">Manipur</option>
+                    <option value="meghalaya">Meghalaya</option>
+                    <option value="mizoram">Mizoram</option>
+                    <option value="nagaland">Nagaland</option>
+                    <option value="odisha">Odisha</option>
+                    <option value="punjab">Punjab</option>
+                    <option value="rajasthan">Rajasthan</option>
+                    <option value="sikkim">Sikkim</option>
+                    <option value="tamil">Tamil Nadu</option>
+                    <option value="tripura">Tripura</option>
+                    <option value="telangana">Telangana</option>
+                    <option value="uttar">Uttar Pradesh</option>
+                    <option value="uttarakhand">Uttarakhand</option>
+                    <option value="west">West Bengal</option>
+                </select>
+            </div>
             
-            
-            <option value="">Andhra Pradesh</option>
-            <option value="">Arunachal Pradesh</option>
-            <option value="">Assam</option>
-               <option value=""> Bihar</option>
-                <option value="">Chhattisgarh</option>
-                <option value="">Goa</option>
-                <option value="">Gujarat</option>
-                <option value="">Haryana</option>
-                <option value="">Himachal Pradesh</option>
-                <option value="">Jharkhand</option>
-                <option value="">Karnataka</option>
-                <option value="">Kerala</option>
-                <option value="">Maharashtra</option>
-                <option value="">Madhya Pradesh</option>
-                <option value="">Manipur</option>
-                <option value="">Meghalaya</option>
-                <option value="">Mizoram</option>
-            <option value="">Nagaland</option>
-            <option value="">Odisha</option>
-                <option value="">Punjab</option>
-               <option value=""> Rajasthan</option>
-                <option value="">Sikkim</option>
-                <option value="">Tamil Nadu</option>
-                <option value="">Tripura</option>
-                <option value="">Telangana</option>
-                <option value="">Uttar Pradesh</option>
-                <option value="">Uttarakhand</option>
-                <option value="">West Bengal</option>
+            <div class="form-group">
+                <label for="tickets"><i class="fas fa-user"></i> Select Ticket Type:</label>
+                <select id="tickets" name="tickets" required>
+                    <option value="adult">Adult (₹500)</option>
+                    <option value="child">Child (₹250)</option>
+                    <option value="senior">Senior (₹300)</option>
+                    <option value="student">Student (₹350)</option>
+                </select>
+            </div>
 
-            </select>
-            
-            <label for="tickets">Select Ticket Type:</label>
-            <select id="tickets" name="tickets">
-                <option value="adult">Adult</option>
-                <option value="child">Child</option>
-                <option value="senior">Senior</option>
-            </select>
-
-            <a href="checkout.html" class="btn">Proceed to Checkout</a>
+            <a href="checkout.html" class="btn">Proceed to Checkout <i class="fas fa-arrow-right"></i></a>
         </form>
     </section>
 
     <!-- Footer Section -->
-<footer>
-    <div class="footer-container">
-        <!-- Footer About Section -->
-        <div class="footer-about">
-            <h3>About MuseumWander</h3>
-            <p>Discover and explore the world’s </p>
-               <p>amazing museums with MuseumWander.</p>
-              <p>Our mission is to make culture and</p> 
-                <p>history accessible to everyone.</p>
-        </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3><i class="fas fa-museum"></i> About MuseumWander</h3>
+                <p>Discover and explore the world's amazing museums with MuseumWander.</p>
+                <p>Our mission is to make culture and history accessible to everyone.</p>
+            </div>
 
-        <!-- Quick Links -->
-        <div class="footer-links">
-            <h3>Quick Links</h3>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#ticket-section">Book Tickets</a></li>
-                <li><a href="#about">About Us</a></li>
-            </ul>
-        </div>
+            <div class="footer-links">
+                <h3><i class="fas fa-link"></i> Quick Links</h3>
+                <ul>
+                    <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                    <li><a href="#ticket-section"><i class="fas fa-chevron-right"></i> Book Tickets</a></li>
+                    <li><a href="#about"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                    <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                </ul>
+            </div>
 
-        <!-- Contact Information -->
-        <div class="footer-contact">
-            <h3>Contact Us</h3>
-            <p>Email: support@museumwander.com</p>
-            <p>Phone: +1 (123) 456-7890</p>
-            <p>Address: 123 Museum St, Art City</p>
-        </div>
+            <div class="footer-contact">
+                <h3><i class="fas fa-envelope"></i> Contact Us</h3>
+                <p><i class="fas fa-envelope"></i> support@museumwander.com</p>
+                <p><i class="fas fa-phone"></i> +1 (123) 456-7890</p>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Museum St, Art City</p>
+            </div>
 
-        <!-- Social Media Links -->
-        <div class="footer-social">
-            <h3>Follow Us</h3>
-            <a href="https://facebook.com"><img src="img/icons8-facebook-48.png" alt="Facebook"></a>
-            <a href="https://twitter.com"><img src="img/icons8-twitter-30.png" alt="Twitter"></a>
-            <a href="https://instagram.com"><img src="img/icons8-instagram-logo-48.png" alt="Instagram"></a>
-            <a href="https://linkedin.com"><img src="img/icons8-linkedin-logo-48.png" alt="LinkedIn"></a>
+            <div class="footer-social">
+                <h3><i class="fas fa-share-alt"></i> Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="footer-bottom">
-        <p>&copy; 2024 MuseumWander. All rights reserved.</p>
-    </div>
-</footer>
-
+        <div class="footer-bottom">
+            <p>&copy; 2024 MuseumWander. All rights reserved.</p>
+        </div>
+    </footer>
 
     <!-- Chatbot -->
     <div class="chatbot-container">
         <div class="chatbot-header">
-            <h4>Ask our Assistant</h4>
-            <button id="chatbot-close" onclick="toggleChatbot()">×</button>
+            <h4><i class="fas fa-robot"></i> Museum Assistant</h4>
+            <button id="chatbot-close" onclick="toggleChatbot()"><i class="fas fa-times"></i></button>
         </div>
         <div class="chatbot-body">
             <div id="chatbot-messages">
-                <p class="chatbot-msg">Hi! How can I help you today?</p>
+                <div class="chatbot-msg bot">
+                    <i class="fas fa-robot"></i> Hi! I'm your museum guide. How can I help you today?
+                </div>
             </div>
-            <input type="text" id="chatbot-input" placeholder="Type your message...">
-            <button id="chatbot-send" onclick="sendMessage()">Send</button>
+            <div class="chatbot-input-container">
+                <input type="text" id="chatbot-input" placeholder="Type your message...">
+                <button id="chatbot-send" onclick="sendMessage()">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
         </div>
     </div>
 
     <!-- Chatbot Icon -->
     <div class="chatbot-icon" onclick="toggleChatbot()">
-        <img src="img/icons8-chatbot-25.png" alt="Chatbot Icon">
+        <i class="fas fa-comments"></i>
     </div>
-
-    <!-- Footer -->
-    
 
     <script src="chatbot.js"></script>
 </body>
