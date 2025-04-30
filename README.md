@@ -28,7 +28,7 @@ Clean and intuitive design with smooth animations and transitions.
 1.Clone the repository
 
 <pre>
-git clone https://github.com/your-username/museum-ticketing-website.git
+git clone https://github.com/ashutosh-2110/MuseumTicketingWebsite.git
 cd museum-ticketing-website
   </pre>
 
