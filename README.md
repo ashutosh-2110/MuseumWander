@@ -28,7 +28,7 @@ Clean and intuitive design with smooth animations and transitions.
 git clone https://github.com/your-username/museum-ticketing-website.git
 cd museum-ticketing-website
   </pre>
-2.Open <pre>index.html</pre> in your browser
+2.Open `index.html` in your browser
 You can double-click the file or use a live server extension if you're using VS Code.
 
 📄 License
