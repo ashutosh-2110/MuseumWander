@@ -20,16 +20,25 @@ Fully functional across devices – mobile, tablet, and desktop.
 🎨 Modern UI
 Clean and intuitive design with smooth animations and transitions.
 
+
+
+
 🚀 How to Run Locally
 
 1.Clone the repository
-<pre>
 
+<pre>
 git clone https://github.com/your-username/museum-ticketing-website.git
 cd museum-ticketing-website
   </pre>
+
+  
 2.Open `index.html` in your browser
 You can double-click the file or use a live server extension if you're using VS Code.
+
+
+
+
 
 📄 License
 Licensed under the MIT License.
