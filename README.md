@@ -1,6 +1,6 @@
 # MuseumTicketingWebsite
 
-A responsive and interactive static website for a museum's online ticketing system. This project allows users to view museum exhibitions and book tickets using a clean, user-friendly interface — all built with plain HTML, CSS, and JavaScript.
+A responsive and interactive static website for a museum's online ticketing system. This project allows users to view museum exhibitions and book tickets using a clean, user-friendly interface with a intergrated chatbot in it.
 
 # Build with ⚒️
 
